@@ -1,0 +1,39 @@
+{
+  "name": "Top Choice Mover",
+  "motto": "Reliable, hassle-free delivery services, handled with care and delivered on time",
+  "mottoShort": "Reliable Delivery Services",
+  "contact": {
+    "phoneNumber": {
+      "primary": 3212729533
+    },
+    "email": {
+      "primary": "topchoicemoversinc@gmail.com"
+    },
+    "address": {
+      "fullAddress": "6180 Babcock St SE, Palm Bay, FL, 32909",
+      "street": "6180 Babcock St SE",
+      "city": "Palm Bay",
+      "state": "FL",
+      "zipCode": 32909,
+      "googleMapsLink": "https://goo.gl/maps/PXfJbeyJ9PFFr4Ty8"
+    }
+  },
+  "social": {
+    "links": {
+      "facebook": "https://www.facebook.com/TopChoiceMoversInc/"
+    }
+  },
+  "services": [],
+  "serving": [
+    "Viera, FL",
+    "Suntree, FL",
+    "Satellite Beach, FL",
+    "Cocoa, FL",
+    "Titusville, FL",
+    "Rockledge, FL",
+    "Melbourne, FL",
+    "West Melbourne, FL",
+    "Palm Bay, FL",
+    "Indialantic, FL"
+  ]
+}

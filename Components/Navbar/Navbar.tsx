@@ -1,19 +1,10 @@
-const routes = [
-  {
-    title: 'About',
-    href: '/about',
-  },
-  {
-    title: 'Services',
-    href: '/services',
-  },
-  {
-    title: 'Contact Us',
-    href: '/contact',
-  },
-];
+import { Route } from '../Dashboard/Dashboard';
 
-const Navbar = () => {
+type Props = {
+  routes: Route[];
+};
+
+const Navbar = (props: Props) => {
   return (
     <nav
       className="flex-no-wrap relative flex w-full items-center justify-between bg-primary p-2 md:py-4 shadow-md shadow-black/5 lg:flex-wrap lg:justify-start"
@@ -65,7 +56,7 @@ const Navbar = () => {
             data-te-navbar-nav-ref
           >
             <li className="lg:pr-2">
-              {routes.map((route) => (
+              {props.routes.map((route) => (
                 <a
                   className="text-base-100 hover:text-secondary focus:text-secondary disabled:text-black/30 lg:px-2 [&.active]:text-black/90"
                   href={route.href}

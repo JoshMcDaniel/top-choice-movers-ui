@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { Organization } from '../Dashboard/Dashboard';
 
 type Props = {
@@ -21,9 +22,17 @@ const HomeHero = (props: Props) => {
         >
           <div className="flex justify-center items-center h-full">
             <div className="text-center text-white px-6 md:px-12">
-              <h1 className="text-5xl md:text-7xl xl:text-8xl font-bold tracking-tight mb-10">
-                {props.org.name}
-              </h1>
+              <div className="relative mx-auto my-10 min-w-[300px] max-w-[90vw] w-[500px] h-[250px]">
+                <Image
+                  src={'/images/logo_no_bg.png'}
+                  alt={props.org.name + ' logo'}
+                  priority={true}
+                  fill
+                  sizes="(max-width: 90vw) 500px,
+                          (max-width: 90vw) 500px,
+                          (max-width: 90vw) 500px"
+                />
+              </div>
               <h2 className="text-2xl md:text-3xl xl:text-3xl font-bold tracking-tight mb-10">
                 {props.org.mottoShort}
               </h2>

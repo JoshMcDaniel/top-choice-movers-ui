@@ -1,6 +1,6 @@
 const BlurryHorizontalDivider = () => {
   return (
-    <hr className="h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-secondary to-transparent opacity-50" />
+    <hr className="h-0.5 border-t-0 bg-transparent bg-gradient-to-r from-transparent via-secondary to-transparent " />
   );
 };
 

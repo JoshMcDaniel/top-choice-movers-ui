@@ -23,6 +23,7 @@ module.exports = {
         secondary: '#E2B74D',
         accent: '#E2B74D',
         'base-100': '#F6F6F6',
+        silver: '#C0C0C0',
       },
     },
     fill: (theme) => ({

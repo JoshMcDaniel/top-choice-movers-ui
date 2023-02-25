@@ -1,5 +1,5 @@
 {
-  "name": "Top Choice Mover",
+  "name": "Top Choice Movers",
   "motto": "Reliable, hassle-free delivery services, handled with care and delivered on time",
   "mottoShort": "Reliable Delivery Services",
   "contact": {
@@ -23,7 +23,18 @@
       "facebook": "https://www.facebook.com/TopChoiceMoversInc/"
     }
   },
-  "services": [],
+  "services": [
+    {
+      "type": "Commercial Moving",
+      "description": "At Top Choice Movers, we know how demanding it can be to run a business. That's why we're dedicated to making your commercial move as seamless and stress-free as possible. We provide efficient and professional office moving and commercial moving services, whether you're moving locally or between offices. From packing and organizing to loading, transporting, and unloading your office furniture and equipment, we take care of it all. Simply give us a call or request a free quote, and we'll arrange for a complimentary in-office estimate. Once you accept our proposal, we'll handle the heavy lifting so you can focus on managing your business. Let us take the hassle out of your next move and get you to your new location with ease.",
+      "route": "commercial-moving"
+    },
+    {
+      "type": "Residential Moving",
+      "description": "Moving can be a stressful and overwhelming experience. At Top Choice Movers, we're here to make your residential move as smooth and easy as possible. We provide professional moving services for local and long-distance moves, ensuring your belongings are carefully packed, transported, and unloaded with care. Our team is experienced in handling all types of household items, from furniture and appliances to delicate items and artwork. We also offer packing and unpacking services, so you can focus on settling into your new home. To get started, simply give us a call or request a free quote, and we'll schedule a complimentary in-home estimate. Once you accept our proposal, we'll take care of the rest, making sure your move is stress-free and enjoyable. Trust us to get you to your new home with ease.",
+      "route": "residential-moving"
+    }
+  ],
   "serving": [
     "Viera, FL",
     "Suntree, FL",

@@ -48,11 +48,11 @@ const Footer = (props: Props) => {
             <h6 className="mb-4 flex justify-center font-semibold uppercase md:justify-start">
               Services
             </h6>
-            <p className="mb-4">
-              <a href="#!" className="text-base-100">
-                Delivery
-              </a>
-            </p>
+            {org.services.map((service) => (
+              <p className="mb-4" key={service.type}>
+                <a href={`/${service.route}`}>{service.type}</a>
+              </p>
+            ))}
           </div>
           <div className="">
             <h6 className="mb-4 flex justify-center font-semibold uppercase md:justify-start">
@@ -60,9 +60,7 @@ const Footer = (props: Props) => {
             </h6>
             {routes.map((route) => (
               <p className="mb-4" key={route.title.replace(' ', '')}>
-                <a href={route.href} className="text-base-100">
-                  {route.title}
-                </a>
+                <a href={route.href}>{route.title}</a>
               </p>
             ))}
           </div>

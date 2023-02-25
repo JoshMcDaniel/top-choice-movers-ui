@@ -15,6 +15,12 @@ export type OrganizationAddress = {
   googleMapsLink: string;
 };
 
+export type Service = {
+  type: string;
+  description: string;
+  route: string;
+};
+
 export type Organization = {
   name: string;
   motto: string;
@@ -33,6 +39,7 @@ export type Organization = {
       facebook?: string;
     };
   };
+  services: Service[];
 };
 
 export type Route = {

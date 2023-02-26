@@ -1,18 +1,20 @@
-import { Route } from '../Dashboard/Dashboard';
+import CallNowButton from '../Buttons/CallNowButton';
+import { Organization, Route } from '../Dashboard/Dashboard';
 
 type Props = {
   routes: Route[];
+  org: Organization;
 };
 
 const Navbar = (props: Props) => {
   return (
     <nav
-      className="flex-no-wrap relative flex w-full items-center justify-between bg-primary p-2 md:py-4 shadow-md shadow-black/5 lg:flex-wrap lg:justify-start"
+      className="flex-no-wrap relative flex w-full items-center justify-between bg-primary p-2 md:py-4 shadow-md shadow-black/5 lg:flex-wrap lg:justify-start text-base-100"
       data-te-navbar-ref
     >
       <div className="flex w-full flex-wrap items-center justify-between px-4 md:px-6">
         <button
-          className="block border-0 bg-transparent py-2 px-2.5 text-base-100 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 lg:hidden"
+          className="block border-0 bg-transparent py-2 px-2.5 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 lg:hidden"
           type="button"
           data-te-collapse-init
           data-te-target="#navbarSupportedContent1"
@@ -40,7 +42,7 @@ const Navbar = (props: Props) => {
           id="navbarSupportedContent1"
           data-te-collapse-item
         >
-          <a
+          {/* <a
             className="mt-2 mr-2 flex items-center text-neutral-900 hover:text-neutral-900 focus:text-neutral-900 lg:mt-0"
             href="#"
           >
@@ -50,7 +52,7 @@ const Navbar = (props: Props) => {
               alt=""
               loading="lazy"
             />
-          </a>
+          </a> */}
           <ul
             className="list-style-none mr-auto flex flex-col pl-0 lg:flex-row"
             data-te-navbar-nav-ref
@@ -58,7 +60,7 @@ const Navbar = (props: Props) => {
             <li className="lg:pr-2">
               {props.routes.map((route) => (
                 <a
-                  className="text-base-100 hover:text-secondary focus:text-secondary disabled:text-black/30 lg:px-2 [&.active]:text-black/90"
+                  className="hover:text-secondary focus:text-secondary disabled:text-black/30 lg:px-2 [&.active]:text-black/90"
                   href={route.href}
                   key={route.title.replace(' ', '')}
                 >
@@ -68,6 +70,10 @@ const Navbar = (props: Props) => {
             </li>
           </ul>
         </div>
+        <CallNowButton
+          phoneNumber={props.org.contact.phoneNumber.primary}
+          wide={true}
+        />
       </div>
     </nav>
   );

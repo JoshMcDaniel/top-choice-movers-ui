@@ -7,7 +7,7 @@ export const phoneNumberFormat = (unformatted: number): string | number => {
     const areaCode = str.slice(0, 3);
     const firstThree = str.slice(3, 6);
     const lastFour = str.slice(6);
-    return `+1-${areaCode}-${firstThree}-${lastFour}`;
+    return `${areaCode}-${firstThree}-${lastFour}`;
   }
   return unformatted;
 };

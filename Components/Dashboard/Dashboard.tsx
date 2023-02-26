@@ -76,7 +76,7 @@ const Dashboard = (props: { children: ReactNode }) => {
 
   return (
     <>
-      <Navbar routes={routes} />
+      <Navbar org={org} routes={routes} />
       {props.children}
       <Footer org={org} routes={routes} />
     </>

@@ -49,6 +49,10 @@ export type Route = {
 
 const routes: Route[] = [
   {
+    title: 'Home',
+    href: '/',
+  },
+  {
     title: 'About',
     href: '/about',
   },

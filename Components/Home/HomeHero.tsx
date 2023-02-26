@@ -20,14 +20,10 @@ const HomeHero = (props: Props) => {
               <h1 className="text-4xl md:text-7xl xl:text-3xl font-bold tracking-tight mb-10">
                 {props.org.mottoShort}
               </h1>
-              <LinkButton
-                href="/contact"
-                borderColor="secondary"
-                textColor="secondary"
-              >
+              <LinkButton href="/contact" color="secondary">
                 Get started
               </LinkButton>
-              <LinkButton href="/about" borderColor="transparent">
+              <LinkButton href="/about" border={false}>
                 Learn more
               </LinkButton>
             </div>

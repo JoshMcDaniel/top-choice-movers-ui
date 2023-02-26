@@ -27,11 +27,7 @@ const HomeHero = (props: Props) => {
               >
                 Get started
               </LinkButton>
-              <LinkButton
-                href="/about"
-                borderColor="transparent"
-                bgColor="transparent"
-              >
+              <LinkButton href="/about" borderColor="transparent">
                 Learn more
               </LinkButton>
             </div>

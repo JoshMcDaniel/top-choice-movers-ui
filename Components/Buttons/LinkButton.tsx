@@ -1,12 +1,12 @@
 type Props = {
   children: React.ReactNode;
   href: string;
-  color?: string;
+  color: string;
   border?: boolean;
 };
 
 const LinkButton = (props: Props) => {
-  const color = props.color || 'base-100';
+  const color = props.color;
   const border = props.border !== false ? color : 'transparent';
   return (
     <a

@@ -2,6 +2,7 @@ import CallNowButton from '../Buttons/CallNowButton';
 import { Organization, Route } from '../Dashboard/Dashboard';
 import { BiMenuAltLeft } from 'react-icons/bi';
 import ModalNav from './ModalNav';
+import SquareAvatar from '../Avatars/SquareAvatar';
 
 type Props = {
   routes: Route[];
@@ -33,17 +34,13 @@ const Navbar = (props: Props) => {
           id="navbarSupportedContent1"
           data-te-collapse-item
         >
-          {/* <a
-            className="mt-2 mr-2 flex items-center text-neutral-900 hover:text-neutral-900 focus:text-neutral-900 lg:mt-0"
-            href="#"
-          >
-            <img
-              src="/images/logo.png"
-              className="w-8 h-8 rounded-full"
-              alt=""
-              loading="lazy"
-            />
-          </a> */}
+          <SquareAvatar
+            src="/images/logo.png"
+            alt={props.org.name + ' logo'}
+            width={120}
+            height={120}
+            className="mr-4"
+          />
           <ul
             className="list-style-none mr-auto flex flex-col pl-0 lg:flex-row"
             data-te-navbar-nav-ref

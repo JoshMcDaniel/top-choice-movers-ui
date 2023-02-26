@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import LinkButton from '../Buttons/LinkButton';
 import { Organization } from '../Dashboard/Dashboard';
 
 type Props = {
@@ -9,51 +10,30 @@ type Props = {
 const HomeHero = (props: Props) => {
   return (
     <section className="mb-40 overflow-hidden">
-      <div
-        className="relative overflow-hidden bg-no-repeat bg-cover bg-[url('/images/bg_truck.jpg')]"
-        style={{
-          backgroundPosition: '50%',
-          height: '500px',
-        }}
-      >
+      <div className="relative overflow-hidden bg-no-repeat bg-cover bg-[url('/images/truck_bg.jpg')] bg-center h-[300px] md:h-[500px]">
         <div
           className="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
-          style={{ backgroundColor: 'rgba(0, 0, 0, 0.75)' }}
+          style={{ backgroundColor: 'rgba(0, 0, 0, 0.55)' }}
         >
           <div className="flex justify-center items-center h-full">
-            <div className="text-center text-white px-6 md:px-12">
-              <div className="relative mx-auto my-10 min-w-[300px] max-w-[90vw] w-[500px] h-[250px]">
-                <Image
-                  src={'/images/logo_no_bg.png'}
-                  alt={props.org.name + ' logo'}
-                  priority={true}
-                  fill
-                  sizes="(max-width: 90vw) 500px,
-                          (max-width: 90vw) 500px,
-                          (max-width: 90vw) 500px"
-                />
-              </div>
-              <h2 className="text-2xl md:text-3xl xl:text-3xl font-bold tracking-tight mb-10">
+            <div className="text-center text-base-100 px-6 md:px-12">
+              <h1 className="text-4xl md:text-7xl xl:text-3xl font-bold tracking-tight mb-10">
                 {props.org.mottoShort}
-              </h2>
-              <a
-                className="inline-block px-7 py-3 mr-1.5 border-2 border-secondary text-secondary font-medium text-sm leading-snug uppercase rounded-full shadow-md hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
-                data-mdb-ripple="true"
-                data-mdb-ripple-color="light"
-                href="#!"
-                role="button"
+              </h1>
+              <LinkButton
+                href="/contact"
+                borderColor="secondary"
+                textColor="secondary"
               >
                 Get started
-              </a>
-              <a
-                className="inline-block px-7 py-3 border-2 border-transparent bg-transparent text-white font-medium text-sm leading-snug uppercase rounded-full focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
-                data-mdb-ripple="true"
-                data-mdb-ripple-color="light"
-                href="#!"
-                role="button"
+              </LinkButton>
+              <LinkButton
+                href="/about"
+                borderColor="transparent"
+                bgColor="transparent"
               >
                 Learn more
-              </a>
+              </LinkButton>
             </div>
           </div>
         </div>

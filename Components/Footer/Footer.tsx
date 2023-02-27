@@ -25,6 +25,7 @@ const Footer = (props: Props) => {
           <a
             href={org.social.links.facebook}
             target="_blank"
+            rel="noopener noreferrer"
             className="mr-6 text-base-100"
           >
             <ImFacebook />

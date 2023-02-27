@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import LinkButton from '../Buttons/LinkButton';
 import { Organization } from '../Dashboard/Dashboard';
 

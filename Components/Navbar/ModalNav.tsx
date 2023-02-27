@@ -1,12 +1,13 @@
+import { baseRoutes } from '@/constants/baseRoutes';
 import Link from 'next/link';
 import { AiOutlineClose } from 'react-icons/ai';
 import CallNowButton from '../Buttons/CallNowButton';
-import { Route } from '../Dashboard/Dashboard';
+import EmailNowButton from '../Buttons/EmailNowButton';
+import { Organization } from '../Dashboard/Dashboard';
 import BlurryHorizontalDivider from '../Dividers/BlurryHorizontalDivider';
 
 type Props = {
-  routes: Route[];
-  phoneNumber: number;
+  org: Organization;
 };
 
 const ModalNav = (props: Props) => {
@@ -24,7 +25,10 @@ const ModalNav = (props: Props) => {
         className="pointer-events-none relative w-auto translate-y-[-50px] opacity-0 transition-all duration-100 ease-in-out min-[0px]:m-0 min-[0px]:h-full min-[0px]:max-w-none"
       >
         <div className="pointer-events-auto relative flex w-full flex-col rounded-md bg-primary bg-clip-padding text-current shadow-lg outline-none0 min-[0px]:h-full min-[0px]:rounded-none min-[0px]:border-0">
-          <div className="flex flex-shrink-0 items-center justify-between rounded-t-md px-[18px] py-4 min-[0px]:rounded-none">
+          <div className="flex flex-shrink-0 items-center justify-between rounded-t-md p-[18px] min-[0px]:rounded-none">
+            <h5 className="text-xl leading-normal" id="modalNavLabel">
+              Menu
+            </h5>
             <button
               type="button"
               className="box-content rounded-none border-none hover:no-underline hover:opacity-75 focus:opacity-100 focus:shadow-none focus:outline-none"
@@ -33,14 +37,11 @@ const ModalNav = (props: Props) => {
             >
               <AiOutlineClose className="text-2xl" />
             </button>
-            <h5 className="text-xl leading-normal" id="modalNavLabel">
-              Menu
-            </h5>
           </div>
           <BlurryHorizontalDivider />
           <div className="relative p-8 min-[0px]:overflow-y-auto">
             <ul className="grid grid-flow-row gap-8 justify-center text-center text-xl">
-              {props.routes.map((route) => (
+              {baseRoutes.map((route) => (
                 <li key={route.title}>
                   <Link href={route.href}>{route.title}</Link>
                 </li>
@@ -49,8 +50,11 @@ const ModalNav = (props: Props) => {
           </div>
           <div className="mt-auto">
             <BlurryHorizontalDivider />
-            <div className="flex flex-shrink-0 flex-wrap items-center justify-center rounded-b-md p-4 min-[0px]:rounded-none">
-              <CallNowButton phoneNumber={props.phoneNumber} />
+            <div className="grid grid-flow-col items-center justify-around rounded-b-md p-4 min-[0px]:rounded-none">
+              <CallNowButton
+                phoneNumber={props.org.contact.phoneNumber.primary}
+              />
+              <EmailNowButton email={props.org.contact.email.primary} />
             </div>
           </div>
         </div>

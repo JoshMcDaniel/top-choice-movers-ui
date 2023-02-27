@@ -42,30 +42,6 @@ export type Organization = {
   services: Service[];
 };
 
-export type Route = {
-  title: string;
-  href: string;
-};
-
-const routes: Route[] = [
-  {
-    title: 'Home',
-    href: '/',
-  },
-  {
-    title: 'About',
-    href: '/about',
-  },
-  {
-    title: 'Services',
-    href: '/services',
-  },
-  {
-    title: 'Contact Us',
-    href: '/contact',
-  },
-];
-
 const Dashboard = (props: { children: ReactNode }) => {
   const router = useRouter();
 
@@ -80,9 +56,9 @@ const Dashboard = (props: { children: ReactNode }) => {
 
   return (
     <>
-      <Navbar org={org} routes={routes} />
+      <Navbar org={org} />
       {props.children}
-      <Footer org={org} routes={routes} />
+      <Footer org={org} />
     </>
   );
 };

@@ -1,4 +1,4 @@
-import { Organization, Route } from '../Dashboard/Dashboard';
+import { Organization } from '../Dashboard/Dashboard';
 import BlurryHorizontalDivider from '../Dividers/BlurryHorizontalDivider';
 import Address from '../Labels/Address';
 import Email from '../Labels/Email';
@@ -7,14 +7,14 @@ import { MdLocationOn } from 'react-icons/md';
 import { HiOutlineMail } from 'react-icons/hi';
 import { IoMdCall } from 'react-icons/io';
 import { ImFacebook } from 'react-icons/im';
+import { baseRoutes } from '@/constants/baseRoutes';
 
 type Props = {
   org: Organization;
-  routes: Route[];
 };
 
 const Footer = (props: Props) => {
-  const { org, routes } = props;
+  const { org } = props;
   return (
     <footer className="bg-primary text-center text-base-100 lg:text-left">
       <div className="flex items-center justify-center p-6 lg:justify-between">
@@ -55,7 +55,7 @@ const Footer = (props: Props) => {
             <h6 className="mb-4 flex justify-center font-semibold uppercase md:justify-start">
               Useful links
             </h6>
-            {routes.map((route) => (
+            {baseRoutes.map((route) => (
               <p className="mb-4" key={route.title.replace(' ', '')}>
                 <a href={route.href}>{route.title}</a>
               </p>

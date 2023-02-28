@@ -2,6 +2,10 @@
   "name": "Top Choice Movers",
   "motto": "Reliable, hassle-free delivery services, handled with care and delivered on time",
   "mottoShort": "Moving your life, one box at a time",
+  "operatingSchedule": {
+    "daysOfWeek": "Monday - Saturday",
+    "hours": "7am - 9pm"
+  },
   "contact": {
     "phoneNumber": {
       "primary": 3212729533

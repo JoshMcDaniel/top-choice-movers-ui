@@ -9,7 +9,7 @@ type Props = {
 
 const HomeHero = (props: Props) => {
   return (
-    <section className="mb-2 lg:mb-28 overflow-hidden shadow-xl">
+    <section className="overflow-hidden shadow-xl">
       <div className="relative overflow-hidden bg-no-repeat bg-cover bg-[url('/images/truck_bg.jpg')] bg-center h-[300px] md:h-[500px]">
         <div className="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed bg-black/[55%]">
           <div className="flex justify-center items-center h-full">

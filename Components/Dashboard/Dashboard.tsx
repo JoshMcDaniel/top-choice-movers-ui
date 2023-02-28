@@ -25,6 +25,10 @@ export type Organization = {
   name: string;
   motto: string;
   mottoShort: string;
+  operatingSchedule: {
+    daysOfWeek: string;
+    hours: string;
+  };
   contact: {
     phoneNumber: {
       primary: number;

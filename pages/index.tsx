@@ -1,3 +1,4 @@
+import OperatingHoursBanner from '@/Components/Banners/OperatingHoursBanner';
 import DynamicHead from '@/Components/Headers/DynamicHead';
 import HomeHero from '@/Components/Home/HomeHero';
 import AboutUsSummary from '@/custom/Home/AboutUsSummary';
@@ -8,6 +9,7 @@ export default function Home() {
     <>
       <DynamicHead org={org} description={`${org.name} home page.`} />
       <HomeHero org={org} />
+      <OperatingHoursBanner org={org} />
       <AboutUsSummary />
     </>
   );

@@ -14,6 +14,7 @@ const SquareAvatar = (props: Props) => {
       <Image
         src={props.src}
         className={`rounded-lg bg-base-100 p-1 `}
+        priority
         alt={props.alt}
         width={props.width}
         height={props.width}

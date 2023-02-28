@@ -43,7 +43,9 @@ const ModalNav = (props: Props) => {
             <ul className="grid grid-flow-row gap-8 justify-center text-center text-xl">
               {baseRoutes.map((route) => (
                 <li key={route.title}>
-                  <Link href={route.href}>{route.title}</Link>
+                  <Link href={route.href}>
+                    <span data-te-modal-dismiss="modalNav">{route.title}</span>
+                  </Link>
                 </li>
               ))}
             </ul>

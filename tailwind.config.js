@@ -5,6 +5,7 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx}',
     './pages/**/*.{js,ts,jsx,tsx}',
     './Components/**/*.{js,ts,jsx,tsx}',
+    './custom/**/*.{js,ts,jsx,tsx}',
     './node_modules/tw-elements/dist/js/**/*.js',
   ],
   theme: {
@@ -38,5 +39,21 @@ module.exports = {
       sans: ['Montserrat', 'sans-serif'],
       serif: ['Merriweather', 'serif'],
     },
+    typography: (theme) => ({
+      DEFAULT: {
+        css: {
+          color: theme('colors.gray.700'),
+          h2: {
+            color: theme('colors.gray.800'),
+          },
+          h3: {
+            color: theme('colors.gray.800'),
+          },
+          strong: {
+            color: theme('colors.gray.800'),
+          },
+        },
+      },
+    }),
   },
 };

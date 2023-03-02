@@ -16,9 +16,14 @@ export type OrganizationAddress = {
 };
 
 export type Service = {
-  type: string;
+  name: string;
+  summary: string;
   description: string;
   route: string;
+  image: {
+    imgSrc: string;
+    imgAlt: string;
+  };
 };
 
 export type Organization = {

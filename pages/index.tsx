@@ -1,5 +1,6 @@
 import DynamicHead from '@/Components/Headers/DynamicHead';
 import HomeHero from '@/Components/Home/HomeHero';
+import ServiceSummarySection from '@/Components/Services/ServiceSummarySection';
 import AlwaysAvailableBanner from '@/custom/general/AlwaysAvailableBanner';
 import AboutUsSummary from '@/custom/Home/AboutUsSummary';
 import org from '../config/organization.json';
@@ -11,6 +12,7 @@ export default function Home() {
       <HomeHero org={org} />
       <AlwaysAvailableBanner />
       <AboutUsSummary />
+      <ServiceSummarySection services={org.services} />
     </>
   );
 }

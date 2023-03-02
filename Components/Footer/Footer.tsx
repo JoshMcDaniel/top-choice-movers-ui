@@ -46,8 +46,8 @@ const Footer = (props: Props) => {
               Services
             </h6>
             {org.services.map((service) => (
-              <p className="mb-4" key={service.type}>
-                <a href={`/${service.route}`}>{service.type}</a>
+              <p className="mb-4" key={service.name}>
+                <a href={`/${service.route}`}>{service.name}</a>
               </p>
             ))}
           </div>

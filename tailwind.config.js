@@ -11,7 +11,10 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [require('tw-elements/dist/plugin')],
+  plugins: [
+    require('@tailwindcss/typography'),
+    require('tw-elements/dist/plugin'),
+  ],
   theme: {
     screens: {
       sm: '480px',
@@ -29,6 +32,22 @@ module.exports = {
         'base-100': '#F6F6F6',
         silver: '#C0C0C0',
       },
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            color: theme('colors.gray.700'),
+            h2: {
+              color: theme('colors.gray.800'),
+            },
+            h3: {
+              color: theme('colors.gray.800'),
+            },
+            strong: {
+              color: theme('colors.gray.800'),
+            },
+          },
+        },
+      }),
     },
     fill: (theme) => ({
       primary: theme('colors.primary'),
@@ -39,21 +58,5 @@ module.exports = {
       sans: ['Montserrat', 'sans-serif'],
       serif: ['Merriweather', 'serif'],
     },
-    typography: (theme) => ({
-      DEFAULT: {
-        css: {
-          color: theme('colors.gray.700'),
-          h2: {
-            color: theme('colors.gray.800'),
-          },
-          h3: {
-            color: theme('colors.gray.800'),
-          },
-          strong: {
-            color: theme('colors.gray.800'),
-          },
-        },
-      },
-    }),
   },
 };

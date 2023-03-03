@@ -29,7 +29,7 @@ const TextImageContent = (props: Props) => {
 
   return (
     <div
-      className={`grid grid-row-2 grid-cols-1 lg:grid-row-1 lg:grid-cols-2 gap-4 lg:gap-8 p-4 lg:p-12 w-full ${bgColor} ${textColor}`}
+      className={`grid grid-cols-1 lg:grid-row-1 lg:grid-cols-2 gap-4 lg:gap-8 px-4 py-12 lg:px-12 w-full ${bgColor} ${textColor}`}
     >
       {props.reverse ? (
         <>

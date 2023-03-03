@@ -22,7 +22,7 @@ const ServicesGroupSummary = (props: Props) => {
           <section key={service.name} className="border border-neutral-200">
             <h2 className="mb-0">
               <button
-                className={`relative border-0 flex w-full items-center py-4 px-5 text-left text-base transition [overflow-anchor:none] hover:z-[2] drop-shadow-none hover:drop-shadow-md focus:z-[3] focus:outline-none ${
+                className={`prose lg:prose-xl relative border-0 flex w-full items-center py-4 px-5 text-left text-base transition [overflow-anchor:none] hover:z-[2] drop-shadow-none hover:drop-shadow-md focus:z-[3] focus:outline-none ${
                   openItems === index
                     ? 'bg-primary text-secondary'
                     : 'bg-base-100 text-primary'
@@ -47,7 +47,7 @@ const ServicesGroupSummary = (props: Props) => {
                 openItems === index ? 'max-h-96' : 'max-h-0'
               }`}
             >
-              <div className="py-4 px-5 grid grid-flow-row gap-4">
+              <div className="prose lg:prose-xl py-4 px-5 grid grid-flow-row gap-4">
                 <span>{service.summary}</span>
                 <ArrowLink
                   route={service.route}

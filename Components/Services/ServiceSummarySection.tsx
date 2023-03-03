@@ -7,8 +7,11 @@ type Props = {
 
 const ServiceSummarySection = (props: Props) => {
   return (
-    <section className="w-full bg-white py-12 px-4 mb-12 items-center justify-items-center">
-      <ServicesGroupSummary services={props.services} />
+    <section className="grid grid-flow-row gap-8 w-full bg-white px-4 p-12 lg:px-12 mb-12 items-start lg:justify-center">
+      <h3 className="text-2xl lg:text-4xl font-extrabold">Moving Services</h3>
+      <div className="m-auto max-w-5xl">
+        <ServicesGroupSummary services={props.services} />
+      </div>
     </section>
   );
 };

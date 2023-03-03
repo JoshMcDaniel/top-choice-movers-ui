@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { AiOutlineDown } from 'react-icons/ai';
+import ArrowLink from '../Buttons/ArrowLink';
 import { Service } from '../Dashboard/Dashboard';
-import BlurryHorizontalDivider from '../Dividers/BlurryHorizontalDivider';
 
 type Props = {
   services: Service[];
@@ -17,7 +17,7 @@ const ServicesGroupSummary = (props: Props) => {
 
   return (
     <div id="serviceAccordion">
-      <div className="rounded-t-lg border bg-base-100 max-w-3xl mx-auto my-8 drop-shadow-xl">
+      <div className="rounded-t-lg border bg-base-100 drop-shadow-xl">
         {props.services.map((service, index) => (
           <section key={service.name} className="border border-neutral-200">
             <h2 className="mb-0">
@@ -47,7 +47,15 @@ const ServicesGroupSummary = (props: Props) => {
                 openItems === index ? 'max-h-96' : 'max-h-0'
               }`}
             >
-              <div className="py-4 px-5">{service.summary}</div>
+              <div className="py-4 px-5 grid grid-flow-row gap-4">
+                <span>{service.summary}</span>
+                <ArrowLink
+                  route={service.route}
+                  linkText="See details"
+                  color="primary"
+                  underline={true}
+                />
+              </div>
             </div>
           </section>
         ))}

@@ -7,7 +7,7 @@ const AboutUsSummary = () => {
       imgAlt="About Us"
       reverse={true}
     >
-      <h3 className="text-2xl lg:text-4xl font-bold mb-4">
+      <h3 className="text-2xl lg:text-4xl font-extrabold uppercase mb-4">
         A family owned moving company serving Florida
       </h3>
       <p className="mb-6">

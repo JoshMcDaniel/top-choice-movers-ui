@@ -1,61 +1,51 @@
 import { useState } from 'react';
-import { FcExpand } from 'react-icons/fc';
+import { AiOutlineDown } from 'react-icons/ai';
 import { Service } from '../Dashboard/Dashboard';
+import BlurryHorizontalDivider from '../Dividers/BlurryHorizontalDivider';
 
 type Props = {
   services: Service[];
 };
 
 const ServicesGroupSummary = (props: Props) => {
-  const [openItems, setIsOpen] = useState<number[]>([]);
+  const [openItems, setIsOpen] = useState(0);
 
   const setIsOpenState = (index: number): void => {
-    const newArr = [...openItems];
-
-    const i = newArr.indexOf(index);
-
-    i > -1 ? newArr.splice(i, 1) : newArr.push(index);
-
-    setIsOpen(newArr);
+    const indexToDisplay = openItems === index ? -1 : index;
+    setIsOpen(indexToDisplay);
   };
 
   return (
     <div id="serviceAccordion">
-      <div className="rounded-t-lg border border-neutral-200 bg-base-100 max-w-3xl mx-auto my-8 shadow-xl">
+      <div className="rounded-t-lg border bg-base-100 max-w-3xl mx-auto my-8 drop-shadow-xl">
         {props.services.map((service, index) => (
-          <section key={service.name}>
-            <h2 className="mb-0" id={`heading${index}`}>
+          <section key={service.name} className="border border-neutral-200">
+            <h2 className="mb-0">
               <button
-                className={`relative flex w-full items-center border-0 bg-white py-4 px-5 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none ${
-                  openItems.includes(index) ? 'text-primary' : 'text-secondary'
+                className={`relative border-0 flex w-full items-center py-4 px-5 text-left text-base transition [overflow-anchor:none] hover:z-[2] drop-shadow-none hover:drop-shadow-md focus:z-[3] focus:outline-none ${
+                  openItems === index
+                    ? 'bg-primary text-secondary'
+                    : 'bg-base-100 text-primary'
                 }`}
                 type="button"
-                data-te-collapse-init
-                data-te-target={`#collapse${index}`}
-                aria-expanded="false"
-                aria-controls={`collapse${index}`}
                 onClick={() => setIsOpenState(index)}
               >
                 {service.name}
                 <span
-                  className={`ml-auto h-5 w-5 shrink-0 transition-transform duration-200 ease-in-out motion-reduce:transition-none ${
-                    openItems.includes(index) ? 'mr-0' : 'mr-1'
-                  } ${
-                    openItems.includes(index) ? 'rotate-0' : 'rotate-[-180deg]'
-                  } ${
-                    openItems.includes(index) ? 'fill-primary' : 'fill-black'
+                  className={`ml-auto border-0 h-5 w-5 shrink-0 transition-transform duration-500 ease-in-out motion-reduce:transition-none ${
+                    openItems === index
+                      ? 'mr-1 rotate-[-180deg] fill-secondary'
+                      : 'mr-0 rotate-0 fill-primary'
                   }`}
                 >
-                  <FcExpand />
+                  <AiOutlineDown />
                 </span>
               </button>
             </h2>
             <div
-              id={`collapse${index}`}
-              className="!visible bg-base-100"
-              data-te-collapse-item
-              data-te-collapse-show
-              aria-labelledby={`heading${index}`}
+              className={`!visible border-0 bg-base-100 overflow-hidden transition-all duration-500 ease-in-out motion-reduce:transition-none ${
+                openItems === index ? 'max-h-96' : 'max-h-0'
+              }`}
             >
               <div className="py-4 px-5">{service.summary}</div>
             </div>

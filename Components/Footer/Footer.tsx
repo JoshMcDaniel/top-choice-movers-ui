@@ -32,7 +32,7 @@ const Footer = (props: Props) => {
           </a>
         </div>
       </div>
-      <BlurryHorizontalDivider />
+      <BlurryHorizontalDivider color="secondary" />
       <div className="mx-6 py-10 text-center md:text-left">
         <div className="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div className="">
@@ -80,7 +80,7 @@ const Footer = (props: Props) => {
           </div>
         </div>
       </div>
-      <BlurryHorizontalDivider />
+      <BlurryHorizontalDivider color="secondary" />
       <div className="bg-primary p-6 text-center grid gap-1 grid-flow-col w-fit m-auto">
         <span>© 2023 Copyright:</span>
         <span className="font-semibold text-base-100">{org.name}</span>

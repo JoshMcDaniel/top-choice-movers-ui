@@ -38,7 +38,7 @@ const ModalNav = (props: Props) => {
               <AiOutlineClose className="text-2xl" />
             </button>
           </div>
-          <BlurryHorizontalDivider />
+          <BlurryHorizontalDivider color="secondary" />
           <div className="relative p-8 min-[0px]:overflow-y-auto">
             <ul className="grid grid-flow-row gap-8 justify-center text-center text-xl">
               {baseRoutes.map((route) => (
@@ -51,7 +51,7 @@ const ModalNav = (props: Props) => {
             </ul>
           </div>
           <div className="mt-auto">
-            <BlurryHorizontalDivider />
+            <BlurryHorizontalDivider color="secondary" />
             <div className="grid grid-flow-col items-center justify-around rounded-b-md p-4 min-[0px]:rounded-none">
               <CallNowButton
                 phoneNumber={props.org.contact.phoneNumber.primary}

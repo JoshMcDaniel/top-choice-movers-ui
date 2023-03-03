@@ -29,20 +29,20 @@
   },
   "services": [
     {
-      "name": "Commercial Moving",
-      "summary": "Top Choice Movers' Commercial Moving service takes the stress out of moving your business. Our team of professionals handles everything from packing and organizing to transportation and reassembly, ensuring a seamless transition. With our commitment to customer satisfaction, you can trust us to minimize downtime and provide you with a hassle-free experience.",
-      "description": "At Top Choice Movers, we know how demanding it can be to run a business. That's why we're dedicated to making your commercial move as seamless and stress-free as possible. We provide efficient and professional office moving and commercial moving services, whether you're moving locally or between offices.\nFrom packing and organizing to loading, transporting, and unloading your office furniture and equipment, we take care of it all. Simply give us a call or request a free quote, and we'll arrange for a complimentary in-office estimate.\nOnce you accept our proposal, we'll handle the heavy lifting so you can focus on managing your business. Let us take the hassle out of your next move and get you to your new location with ease.",
-      "route": "commercial-moving",
+      "name": "Residential Moving",
+      "summary": "At Top Choice Movers, we understand that moving can be overwhelming, which is why we offer our expertise to make your residential move as smooth as possible. Our team of professionals handles everything from packing and loading to transportation and unloading, leaving you with a stress-free experience. Trust us to make your move a success.",
+      "description": "Moving can be a stressful and overwhelming experience. At Top Choice Movers, we're here to make your residential move as smooth and easy as possible. We provide professional moving services for local and long-distance moves, ensuring your belongings are carefully packed, transported, and unloaded with care.\nOur team is experienced in handling all types of household items, from furniture and appliances to delicate items and artwork.We also offer packing and unpacking services, so you can focus on settling into your new home.\nTo get started, simply give us a call or request a free quote, and we'll schedule a complimentary in-home estimate. Once you accept our proposal, we'll take care of the rest, making sure your move is stress-free and enjoyable. Trust us to get you to your new home with ease.",
+      "route": "residential-moving",
       "image": {
         "imgSrc": "",
         "imgAlt": ""
       }
     },
     {
-      "name": "Residential Moving",
-      "summary": "At Top Choice Movers, we understand that moving can be overwhelming, which is why we offer our expertise to make your residential move as smooth as possible. Our team of professionals handles everything from packing and loading to transportation and unloading, leaving you with a stress-free experience. Trust us to make your move a success.",
-      "description": "Moving can be a stressful and overwhelming experience. At Top Choice Movers, we're here to make your residential move as smooth and easy as possible. We provide professional moving services for local and long-distance moves, ensuring your belongings are carefully packed, transported, and unloaded with care.\nOur team is experienced in handling all types of household items, from furniture and appliances to delicate items and artwork.We also offer packing and unpacking services, so you can focus on settling into your new home.\nTo get started, simply give us a call or request a free quote, and we'll schedule a complimentary in-home estimate. Once you accept our proposal, we'll take care of the rest, making sure your move is stress-free and enjoyable. Trust us to get you to your new home with ease.",
-      "route": "residential-moving",
+      "name": "Commercial Moving",
+      "summary": "Top Choice Movers' Commercial Moving service takes the stress out of moving your business. Our team of professionals handles everything from packing and organizing to transportation and reassembly, ensuring a seamless transition. With our commitment to customer satisfaction, you can trust us to minimize downtime and provide you with a hassle-free experience.",
+      "description": "At Top Choice Movers, we know how demanding it can be to run a business. That's why we're dedicated to making your commercial move as seamless and stress-free as possible. We provide efficient and professional office moving and commercial moving services, whether you're moving locally or between offices.\nFrom packing and organizing to loading, transporting, and unloading your office furniture and equipment, we take care of it all. Simply give us a call or request a free quote, and we'll arrange for a complimentary in-office estimate.\nOnce you accept our proposal, we'll handle the heavy lifting so you can focus on managing your business. Let us take the hassle out of your next move and get you to your new location with ease.",
+      "route": "commercial-moving",
       "image": {
         "imgSrc": "",
         "imgAlt": ""

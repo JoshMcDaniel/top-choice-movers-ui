@@ -14,19 +14,19 @@ const SelectedServicePage = (props: { service: Service }) => {
         description={`${org.name} ${service?.name} page.`}
         title={service?.name || ''}
       />
-      <HeroSection bgImageUrl={service.image.imgSrc}>
+      <HeroSection bgImageUrl={service?.image?.imgSrc}>
         <div className="text-center px-6 md:px-12">
           <h1 className="text-4xl lg:text-4xl font-extrabold text-base-100">
-            {service.name}
+            {service?.name}
           </h1>
         </div>
       </HeroSection>
       <div className="prose lg:prose-xl grid grid-flow-row gap-4 lg:gap-8 px-4 py-12 lg:px-12 w-full m-0 lg:m-auto">
         <h3 className="text-2xl lg:text-4xl font-extrabold uppercase mb-4">
-          {service.name}
+          {service?.name}
         </h3>
-        <p>{service.summary}</p>
-        <p className="mb-6">{service.description}</p>
+        <p>{service?.summary}</p>
+        <p className="mb-6">{service?.description}</p>
       </div>
     </>
   );
@@ -38,7 +38,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
     fallback: true,
     paths: services.map((service) => ({
       params: {
-        selectedService: service.route,
+        selectedService: service?.route,
       },
     })),
   };
@@ -55,7 +55,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
   const serviceRoute = context?.params?.selectedService;
 
   const service = objectData.services.find(
-    (service: Service) => service.route === serviceRoute
+    (service: Service) => service?.route === serviceRoute
   );
 
   return {

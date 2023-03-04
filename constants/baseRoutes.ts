@@ -1,6 +1,9 @@
+import org from '../config/organization.json';
+
 export type Route = {
   title: string;
   href: string;
+  routes?: Route[];
 };
 
 export const baseRoutes: Route[] = [
@@ -15,6 +18,10 @@ export const baseRoutes: Route[] = [
   {
     title: 'Services',
     href: '/services',
+    routes: org.services.map((service) => ({
+      title: service.name,
+      href: service.route,
+    })),
   },
   {
     title: 'Contact Us',

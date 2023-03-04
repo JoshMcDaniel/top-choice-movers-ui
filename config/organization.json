@@ -34,7 +34,7 @@
       "description": "Moving can be a stressful and overwhelming experience. At Top Choice Movers, we're here to make your residential move as smooth and easy as possible. We provide professional moving services for local and long-distance moves, ensuring your belongings are carefully packed, transported, and unloaded with care.\nOur team is experienced in handling all types of household items, from furniture and appliances to delicate items and artwork.We also offer packing and unpacking services, so you can focus on settling into your new home.\nTo get started, simply give us a call or request a free quote, and we'll schedule a complimentary in-home estimate. Once you accept our proposal, we'll take care of the rest, making sure your move is stress-free and enjoyable. Trust us to get you to your new home with ease.",
       "route": "residential-moving",
       "image": {
-        "imgSrc": "",
+        "imgSrc": "/images/truck_bg.jpg",
         "imgAlt": ""
       }
     },
@@ -44,7 +44,7 @@
       "description": "At Top Choice Movers, we know how demanding it can be to run a business. That's why we're dedicated to making your commercial move as seamless and stress-free as possible. We provide efficient and professional office moving and commercial moving services, whether you're moving locally or between offices.\nFrom packing and organizing to loading, transporting, and unloading your office furniture and equipment, we take care of it all. Simply give us a call or request a free quote, and we'll arrange for a complimentary in-office estimate.\nOnce you accept our proposal, we'll handle the heavy lifting so you can focus on managing your business. Let us take the hassle out of your next move and get you to your new location with ease.",
       "route": "commercial-moving",
       "image": {
-        "imgSrc": "",
+        "imgSrc": "/images/truck_bg.jpg",
         "imgAlt": ""
       }
     },
@@ -54,7 +54,7 @@
       "description": "Top Choice Movers' Long Distance moving service is perfect for anyone looking to relocate within the state of Florida. We understand that moving can be a stressful and overwhelming experience, especially when it involves long distances. That's why we're dedicated to providing a smooth and efficient moving experience that meets all your needs.\nOur Long Distance service within Florida includes packing, loading, transporting, unloading, and unpacking of your belongings, ensuring that your items are safely and securely transported to your new location. We also provide insurance options to give you peace of mind during the move. Our team of expert movers will work closely with you to create a customized moving plan that fits your unique needs and budget.\nAt Top Choice Movers, we prioritize your satisfaction and strive to exceed your expectations. If you're moving within Florida, our Long Distance service will ensure that your move is stress-free and seamless. Contact us today to schedule a consultation and receive a free quote.",
       "route": "residential-moving",
       "image": {
-        "imgSrc": "",
+        "imgSrc": "/images/truck_bg.jpg",
         "imgAlt": ""
       }
     },
@@ -64,7 +64,7 @@
       "description": "Top Choice Movers' Haul Away service is designed to help you get rid of unwanted items quickly and easily. Whether you're cleaning out your garage, remodeling your home, or just decluttering, our team of expert movers can help haul away all your unwanted items.\nOur Haul Away service includes the removal of various items such as furniture, appliances, electronics, and more. We ensure that all items are disposed of properly and in an environmentally friendly manner.\nAt Top Choice Movers, we are committed to providing you with a stress-free and hassle-free experience. Our team of professionals will work with you to schedule a convenient pickup time that fits your schedule. We'll also provide you with a clear and upfront pricing structure, so you know exactly what to expect.\nWhen you choose Top Choice Movers' Haul Away service, you can rest assured that you're choosing a reliable and trustworthy company that will get the job done right. Contact us today to schedule a pickup and say goodbye to all your unwanted items.",
       "route": "haul-away-moving",
       "image": {
-        "imgSrc": "",
+        "imgSrc": "/images/truck_bg.jpg",
         "imgAlt": ""
       }
     }

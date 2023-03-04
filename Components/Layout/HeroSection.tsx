@@ -1,27 +1,19 @@
-import MottoShort from '@/custom/general/MottoShort';
-import LinkButton from '../Buttons/LinkButton';
-import { Organization } from '../Dashboard/Dashboard';
-
 type Props = {
-  org: Organization;
+  bgImageUrl: string;
+  children?: React.ReactNode;
   angled?: boolean;
 };
 
-const HomeHero = (props: Props) => {
+const HeroSection = (props: Props) => {
   return (
     <section className="overflow-hidden shadow-xl">
-      <div className="relative overflow-hidden bg-no-repeat bg-cover bg-[url('/images/truck_bg.jpg')] bg-center h-[300px] md:h-[500px]">
+      <div
+        className="relative overflow-hidden bg-no-repeat bg-cover bg-center h-[300px] md:h-[500px]"
+        style={{ backgroundImage: `url(${props.bgImageUrl})` }}
+      >
         <div className="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed bg-black/[55%]">
           <div className="flex justify-center items-center h-full">
-            <div className="text-center px-6 md:px-12">
-              <MottoShort />
-              <LinkButton href="/contact" color="secondary">
-                Get started
-              </LinkButton>
-              <LinkButton href="/about" color="base-100" border={false}>
-                Learn more
-              </LinkButton>
-            </div>
+            {props.children}
           </div>
         </div>
       </div>
@@ -48,4 +40,4 @@ const HomeHero = (props: Props) => {
   );
 };
 
-export default HomeHero;
+export default HeroSection;

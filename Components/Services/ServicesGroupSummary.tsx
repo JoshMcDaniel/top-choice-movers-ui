@@ -50,7 +50,7 @@ const ServicesGroupSummary = (props: Props) => {
               <div className="prose lg:prose-xl py-4 px-5 grid grid-flow-row gap-4">
                 <span>{service.summary}</span>
                 <ArrowLink
-                  route={service.route}
+                  route={`services/${service.route}`}
                   linkText="See details"
                   color="primary"
                   underline={true}

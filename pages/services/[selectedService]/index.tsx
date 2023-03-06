@@ -21,6 +21,9 @@ const SelectedServicePage = (props: { service: Service }) => {
           </h1>
         </div>
       </HeroSection>
+      <FreeQuoteBanner>
+        <span>Interested in {service.name}?</span>
+      </FreeQuoteBanner>
       <div className="grid grid-flow-row gap-4 lg:gap-8 px-4 py-12 lg:px-12 max-w-5xl m-0 lg:m-auto">
         <h3 className="text-2xl lg:text-4xl font-extrabold uppercase mb-4">
           {service?.name}
@@ -47,6 +50,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 // Fetching data from the JSON file
 import fsPromises from 'fs/promises';
 import path from 'path';
+import FreeQuoteBanner from '@/Components/Banners/FreeQuote';
 export const getStaticProps: GetStaticProps = async (context) => {
   const filePath = path.join(process.cwd(), 'config/organization.json');
   const jsonData = await fsPromises.readFile(filePath);

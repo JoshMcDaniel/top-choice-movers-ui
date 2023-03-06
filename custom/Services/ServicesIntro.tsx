@@ -1,3 +1,4 @@
+import FreeQuoteBanner from '@/Components/Banners/FreeQuote';
 import HeroSection from '@/Components/Layout/HeroSection';
 
 const ServicesIntro = () => {
@@ -10,6 +11,7 @@ const ServicesIntro = () => {
           </h1>
         </div>
       </HeroSection>
+      <FreeQuoteBanner />
       <div className="py-8 lg:py-12 px-4 lg:px-12 m-auto max-w-5xl">
         <h1 className="text-3xl lg:text-5xl font-extrabold uppercase mb-4">
           Moving Services

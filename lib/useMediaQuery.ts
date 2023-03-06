@@ -1,11 +1,10 @@
-import { getCurrentBreakpoint } from './getViewBreakpoints';
 import resolveConfig from 'tailwindcss/resolveConfig';
 import tailwindConfig from '../tailwind.config';
 import useWindowDimensions from './useWindowDimensions';
 
 const fullConfig = resolveConfig(tailwindConfig);
 
-const isScreenSize = (size: 'sm' | 'md' | 'lg' | 'xl'): boolean => {
+const useMediaQuery = (size: 'sm' | 'md' | 'lg' | 'xl'): boolean => {
   const { width } = useWindowDimensions();
 
   if (fullConfig?.theme?.screens) {
@@ -22,4 +21,4 @@ const isScreenSize = (size: 'sm' | 'md' | 'lg' | 'xl'): boolean => {
   return false;
 };
 
-export default isScreenSize;
+export default useMediaQuery;

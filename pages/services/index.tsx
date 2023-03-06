@@ -2,12 +2,14 @@ import LinkButton from '@/Components/Buttons/LinkButton';
 import DynamicHead from '@/Components/Headers/DynamicHead';
 import TextImageContent from '@/Components/Layout/TextImageContent';
 import ServicesIntro from '@/custom/Services/ServicesIntro';
-import isScreenSize from '@/lib/isScreenSize';
+import useMediaQuery from '@/lib/useMediaQuery';
 import org from '../../config/organization.json';
 
 type Props = {};
 
 const ServicesPage = (props: Props) => {
+  const isMdView = useMediaQuery('lg');
+
   return (
     <>
       <DynamicHead
@@ -24,7 +26,7 @@ const ServicesPage = (props: Props) => {
             <TextImageContent
               imgSrc="/images/moving_action.png"
               imgAlt="Moving action"
-              reverse={isEven && isScreenSize('lg')}
+              reverse={isEven && isMdView}
               bgColor={isEven ? 'primary' : 'white'}
             >
               <div className={colorScheme}>

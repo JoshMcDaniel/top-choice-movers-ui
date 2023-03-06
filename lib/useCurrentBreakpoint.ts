@@ -4,7 +4,7 @@ import useWindowDimensions from './useWindowDimensions';
 
 const fullConfig = resolveConfig(tailwindConfig);
 
-export const getCurrentBreakpoint = (): string => {
+const useCurrentBreakpoint = (): string => {
   const { width } = useWindowDimensions();
 
   let currentBreakpoint: string = '';
@@ -27,3 +27,5 @@ export const getCurrentBreakpoint = (): string => {
   }
   return currentBreakpoint;
 };
+
+export default useCurrentBreakpoint;

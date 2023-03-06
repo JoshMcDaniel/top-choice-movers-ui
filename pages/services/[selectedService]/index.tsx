@@ -21,7 +21,7 @@ const SelectedServicePage = (props: { service: Service }) => {
           </h1>
         </div>
       </HeroSection>
-      <div className="prose lg:prose-xl grid grid-flow-row gap-4 lg:gap-8 px-4 py-12 lg:px-12 w-full m-0 lg:m-auto">
+      <div className="grid grid-flow-row gap-4 lg:gap-8 px-4 py-12 lg:px-12 max-w-5xl m-0 lg:m-auto">
         <h3 className="text-2xl lg:text-4xl font-extrabold uppercase mb-4">
           {service?.name}
         </h3>

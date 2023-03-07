@@ -5,6 +5,7 @@ import CallNowButton from '../Buttons/CallNowButton';
 import EmailNowButton from '../Buttons/EmailNowButton';
 import { Organization } from '../Dashboard/Dashboard';
 import BlurryHorizontalDivider from '../Dividers/BlurryHorizontalDivider';
+import AccordionLink from './AccordionLink';
 
 type Props = {
   org: Organization;
@@ -39,16 +40,26 @@ const ModalNav = (props: Props) => {
             </button>
           </div>
           <BlurryHorizontalDivider color="secondary" />
-          <div className="relative p-8 min-[0px]:overflow-y-auto">
-            <ul className="grid grid-flow-row gap-8 justify-center text-center text-xl">
-              {baseRoutes.map((route) => (
-                <li key={route.title}>
-                  <Link href={route.href}>
-                    <span data-te-modal-dismiss="modalNav">{route.title}</span>
-                  </Link>
-                </li>
-              ))}
-            </ul>
+          <div className="relative py-8 px-16 min-[0px]:overflow-y-auto">
+            <div className="w-fit sm:m-auto">
+              <ul className="grid grid-flow-row gap-8 text-xl">
+                {baseRoutes.map((route) => {
+                  return route?.routes?.length ? (
+                    <li key={route.title}>
+                      <AccordionLink route={route} parentRoute={route.href} />
+                    </li>
+                  ) : (
+                    <li key={route.title}>
+                      <Link href={route.href}>
+                        <span data-te-modal-dismiss="modalNav">
+                          {route.title}
+                        </span>
+                      </Link>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
           </div>
           <div className="mt-auto">
             <BlurryHorizontalDivider color="secondary" />

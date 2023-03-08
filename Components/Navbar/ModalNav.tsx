@@ -1,11 +1,10 @@
 import { baseRoutes } from '@/constants/baseRoutes';
-import Link from 'next/link';
 import { AiOutlineClose } from 'react-icons/ai';
 import CallNowButton from '../Buttons/CallNowButton';
 import EmailNowButton from '../Buttons/EmailNowButton';
 import { Organization } from '../Dashboard/Dashboard';
 import BlurryHorizontalDivider from '../Dividers/BlurryHorizontalDivider';
-import AccordionLink from './AccordionLink';
+import MobileNavLink from './MobileNavLink';
 
 type Props = {
   org: Organization;
@@ -43,21 +42,9 @@ const ModalNav = (props: Props) => {
           <div className="relative py-8 px-16 min-[0px]:overflow-y-auto">
             <div className="w-fit sm:m-auto">
               <ul className="grid grid-flow-row gap-8 text-xl">
-                {baseRoutes.map((route) => {
-                  return route?.routes?.length ? (
-                    <li key={route.title}>
-                      <AccordionLink route={route} parentRoute={route.href} />
-                    </li>
-                  ) : (
-                    <li key={route.title}>
-                      <Link href={route.href}>
-                        <span data-te-modal-dismiss="modalNav">
-                          {route.title}
-                        </span>
-                      </Link>
-                    </li>
-                  );
-                })}
+                {baseRoutes.map((route) => (
+                  <MobileNavLink key={route.href} route={route} />
+                ))}
               </ul>
             </div>
           </div>

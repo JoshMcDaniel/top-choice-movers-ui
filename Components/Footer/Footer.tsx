@@ -47,7 +47,7 @@ const Footer = (props: Props) => {
             </h6>
             {org.services.map((service) => (
               <p className="mb-4" key={service.name}>
-                <a href={`/${service.route}`}>{service.name}</a>
+                <a href={`/services${service.route}`}>{service.name}</a>
               </p>
             ))}
           </div>
@@ -56,7 +56,7 @@ const Footer = (props: Props) => {
               Useful links
             </h6>
             {baseRoutes.map((route) => (
-              <p className="mb-4" key={route.title.replace(' ', '')}>
+              <p className="mb-4" key={route.href}>
                 <a href={route.href}>{route.title}</a>
               </p>
             ))}

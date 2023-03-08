@@ -40,7 +40,7 @@ const Navbar = (props: Props) => {
               <a
                 className="hover:text-secondary focus:text-secondary disabled:text-black/30 lg:px-2 [&.active]:text-black/90"
                 href={route.href}
-                key={route.title.replace(' ', '')}
+                key={route.href}
               >
                 {route.title}
               </a>

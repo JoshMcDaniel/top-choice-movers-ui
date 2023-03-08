@@ -1,11 +1,10 @@
 import { useState } from 'react';
 import { Route } from '@/constants/baseRoutes';
-import Link from 'next/link';
 import { AiOutlineDown } from 'react-icons/ai';
+import MobileNavLink from './MobileNavLink';
 
 type Props = {
   route: Route;
-  parentRoute?: string;
 };
 
 const AccordionLink = (props: Props) => {
@@ -15,10 +14,10 @@ const AccordionLink = (props: Props) => {
     setIsOpen(!isOpen);
   };
 
-  const { route, parentRoute } = props;
+  const { route } = props;
 
   return (
-    <div>
+    <li>
       <button
         className="grid grid-flow-col gap-2 justify-start items-center font-medium transition duration-500 ease-in-out"
         type="button"
@@ -35,29 +34,27 @@ const AccordionLink = (props: Props) => {
           <AiOutlineDown />
         </span>
       </button>
-      <div
+      <ul
         className={`!visible grid grid-flow-row gap-6 text-sm overflow-hidden transition-all duration-500 ease-in-out motion-reduce:transition-none ${
           isOpen ? 'max-h-72 border-l pt-4' : 'max-h-0'
         }`}
       >
-        {route?.routes?.map((childRoute) => (
-          <div
-            key={childRoute.title}
-            className="grid justify-start items-end pl-4"
-          >
-            <div key={childRoute.title}>
-              <Link
-                href={`${parentRoute ? `${parentRoute}/` : ''}${
-                  childRoute.href
-                }`}
-              >
-                <span data-te-modal-dismiss="modalNav">{childRoute.title}</span>
-              </Link>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
+        {route?.routes?.map((childRoute) => {
+          const newRoute: Route = {
+            ...childRoute,
+            href: `${route.href}${childRoute.href}`,
+          };
+          return (
+            <span
+              key={childRoute.href}
+              className="grid justify-start items-end pl-4"
+            >
+              <MobileNavLink route={newRoute} />
+            </span>
+          );
+        })}
+      </ul>
+    </li>
   );
 };
 

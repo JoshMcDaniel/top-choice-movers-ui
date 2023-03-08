@@ -59,7 +59,9 @@ export const getStaticProps: GetStaticProps = async (context) => {
   const serviceRoute = context?.params?.selectedService;
 
   const service = objectData.services.find(
-    (service: Service) => service?.route === serviceRoute
+    (service: Service) =>
+      service?.route ===
+      (service.route.startsWith('/') ? `/${serviceRoute}` : serviceRoute)
   );
 
   return {

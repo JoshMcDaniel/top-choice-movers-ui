@@ -19,7 +19,7 @@ const AccordionLink = (props: Props) => {
   return (
     <li>
       <button
-        className="grid grid-flow-col gap-2 justify-start items-center font-medium transition duration-500 ease-in-out"
+        className="grid grid-flow-col gap-2 justify-start items-center transition duration-500 ease-in-out"
         type="button"
         onClick={() => setIsOpenState()}
       >

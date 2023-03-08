@@ -18,10 +18,16 @@ export const baseRoutes: Route[] = [
   {
     title: 'Services',
     href: '/services',
-    routes: org.services.map((service) => ({
-      title: service.name,
-      href: service.route,
-    })),
+    routes: [
+      {
+        title: 'Overview',
+        href: '/',
+      },
+      ...org.services.map((service) => ({
+        title: service.name,
+        href: service.route,
+      })),
+    ],
   },
   {
     title: 'Contact Us',

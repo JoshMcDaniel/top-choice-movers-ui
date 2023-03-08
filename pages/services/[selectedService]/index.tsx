@@ -41,7 +41,9 @@ export const getStaticPaths: GetStaticPaths = async () => {
     fallback: true,
     paths: services.map((service) => ({
       params: {
-        selectedService: service?.route,
+        selectedService: service.route.startsWith('/')
+          ? service.route.slice(1)
+          : service.route,
       },
     })),
   };

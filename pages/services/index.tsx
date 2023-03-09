@@ -24,10 +24,10 @@ const ServicesPage = (props: Props) => {
         return (
           <section key={service.name}>
             <TextImageContent
-              imgSrc="/images/moving_action.png"
-              imgAlt="Moving action"
+              imgSrc={service.image.imgSrc}
+              imgAlt={service.image.imgAlt}
               reverse={isEven && isMdView}
-              bgColor={isEven ? 'primary' : 'white'}
+              bgColor={isEven ? 'primary' : 'base-100'}
             >
               <div className={colorScheme}>
                 <h3 className="text-2xl lg:text-4xl font-extrabold uppercase mb-4">

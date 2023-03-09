@@ -36,11 +36,14 @@ module.exports = {
         DEFAULT: {
           css: {
             color: theme('colors.gray.700'),
+            h1: {
+              color: theme('colors.gray.700'),
+            },
             h2: {
-              color: theme('colors.gray.800'),
+              color: theme('colors.gray.700'),
             },
             h3: {
-              color: theme('colors.gray.800'),
+              color: theme('colors.gray.700'),
             },
             strong: {
               color: theme('colors.gray.800'),

@@ -5,16 +5,18 @@ type Props = {
   reverse?: boolean;
   bgColor?: string;
   textColor?: string;
+  disableShadow?: boolean;
 };
 
 const TextImageContent = (props: Props) => {
   const bgColor = `bg-${props.bgColor || ''}`;
   const textColor = `text-${props.textColor || ''}`;
+  const shadow = `${props.disableShadow ? '' : 'shadow-lg'}`;
 
   const imgSection = (
     <div className="grow-0 shrink-0 basis-auto w-full mb-6 lg:mb-0">
       <div
-        className="relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg bg-center"
+        className={`relative overflow-hidden bg-no-repeat bg-cover ripple rounded-lg bg-center ${shadow}`}
         data-mdb-ripple="true"
         data-mdb-ripple-color="light"
       >

@@ -6,6 +6,11 @@ import org from '../../config/organization.json';
 
 export const dashboard_drawer_element_id = 'dashboard-drawer';
 
+export type OrgImage = {
+  imgSrc: string;
+  imgAlt: string;
+};
+
 export type OrganizationAddress = {
   fullAddress: string;
   street: string;
@@ -20,10 +25,7 @@ export type Service = {
   summary: string;
   description: string;
   route: string;
-  image: {
-    imgSrc: string;
-    imgAlt: string;
-  };
+  image: OrgImage;
 };
 
 export type Organization = {

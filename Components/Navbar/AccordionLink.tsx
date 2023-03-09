@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Route } from '@/constants/baseRoutes';
-import { AiOutlineDown } from 'react-icons/ai';
 import MobileNavLink from './MobileNavLink';
+import ExpandCollapseWithArrow from '../Buttons/ExpandCollapseWithArrow';
 
 type Props = {
   route: Route;
@@ -18,22 +18,11 @@ const AccordionLink = (props: Props) => {
 
   return (
     <li>
-      <button
-        className="grid grid-flow-col gap-2 justify-start items-center transition duration-500 ease-in-out"
-        type="button"
-        onClick={() => setIsOpenState()}
-      >
-        {route.title}
-        <span
-          className={`ml-auto border-0 h-5 w-5 shrink-0 transition-transform duration-500 ease-in-out motion-reduce:transition-none ${
-            isOpen
-              ? 'mr-1 rotate-[-180deg] fill-secondary'
-              : 'mr-0 rotate-0 fill-primary'
-          }`}
-        >
-          <AiOutlineDown />
-        </span>
-      </button>
+      <ExpandCollapseWithArrow
+        onClick={setIsOpenState}
+        isOpen={isOpen}
+        text={route.title}
+      />
       <ul
         className={`!visible grid grid-flow-row gap-6 text-sm overflow-hidden transition-all duration-500 ease-in-out motion-reduce:transition-none ${
           isOpen ? 'max-h-72 border-l pt-4' : 'max-h-0'

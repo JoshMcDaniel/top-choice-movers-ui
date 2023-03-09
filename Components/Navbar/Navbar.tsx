@@ -4,6 +4,7 @@ import SquareAvatar from '../Avatars/SquareAvatar';
 import { baseRoutes } from '@/constants/baseRoutes';
 import ModalNav from './ModalNav';
 import CallNowButton from '../Buttons/CallNowButton';
+import NavLink from './NavLink';
 
 type Props = {
   org: Organization;
@@ -32,20 +33,12 @@ const Navbar = (props: Props) => {
         data-te-collapse-item
       >
         <ul
-          className="list-style-none mr-auto flex flex-col pl-0 lg:flex-row"
+          className="list-style-none mr-auto grid grid-flow-col gap-8 items-center justify-evenly text-md pl-0"
           data-te-navbar-nav-ref
         >
-          <li className="lg:pr-2">
-            {baseRoutes.map((route) => (
-              <a
-                className="hover:text-secondary focus:text-secondary disabled:text-black/30 lg:px-2 [&.active]:text-black/90"
-                href={route.href}
-                key={route.href}
-              >
-                {route.title}
-              </a>
-            ))}
-          </li>
+          {baseRoutes.map((route) => (
+            <NavLink key={route.href} route={route} />
+          ))}
         </ul>
       </div>
       <ModalNav org={props.org} />

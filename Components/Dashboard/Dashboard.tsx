@@ -17,11 +17,11 @@ export type OrganizationAddress = {
   city: string;
   state: string;
   zipCode: number;
-  googleMapsLink: string;
 };
 
 export type Service = {
   name: string;
+  summaryShort: string;
   summary: string;
   description: string;
   route: string;
@@ -48,6 +48,8 @@ export type Organization = {
   social: {
     links: {
       facebook?: string;
+      instagram?: string;
+      youtube?: string;
     };
   };
   services: Service[];

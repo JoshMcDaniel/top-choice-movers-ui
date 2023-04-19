@@ -4,36 +4,40 @@ import HeroSection from '@/Components/Layout/HeroSection';
 const ServicesIntro = () => {
   return (
     <>
-      <HeroSection bgImageUrl="/images/moving_action2.png">
+      <HeroSection bgImageUrl="/images/training_programs.jpg">
         <div className="text-center px-6 md:px-12">
           <h1 className="text-3xl lg:text-5xl font-extrabold text-base-100">
-            Moving Services
+            Training Programs
           </h1>
         </div>
       </HeroSection>
       <FreeQuoteBanner />
-      <div className="py-8 lg:py-12 px-4 lg:px-12 m-auto max-w-5xl">
+      <div className="prose py-8 lg:py-12 px-4 lg:px-12 m-auto max-w-5xl">
         <h1 className="text-3xl lg:text-5xl font-extrabold uppercase mb-4">
-          Moving Services
+          Training Programs
         </h1>
         <p className="mb-6">
-          At Top Choice Movers, we are committed to providing high-quality
-          moving services that are tailored to meet the unique needs of our
-          clients. Whether you are moving locally or long distance,
-          residentially or commercially, we have the expertise and resources to
-          ensure a smooth and stress-free move. Our team of professionals is
-          dedicated to customer satisfaction and will work with you every step
-          of the way to ensure your move is a success.
+          At "A Better Companion," we understand that every dog and owner have
+          unique needs and goals. That's why we offer personalized dog training
+          programs tailored to meet those needs. We believe that every dog is
+          capable of learning and growing, and we are dedicated to helping them
+          do so.
         </p>
         <p>
-          From packing and loading to transportation and unloading, we handle
-          every aspect of the moving process with care and attention to detail.
-          We understand that every move is different, which is why we offer a
-          range of services that can be customized to fit your specific needs.
-          Whether you need help with packing and organization, loading and
-          unloading, or transportation and logistics, our team has the
-          experience and expertise to get the job done right. Take a look at
-          some of our service offerings below.
+          With our expertise and guidance, you will learn effective techniques
+          to teach your dog new skills and behaviors that will improve their
+          obedience and enhance their quality of life. Whether you're looking to
+          address specific problem behaviors or simply want to strengthen your
+          bond with your dog, our personalized training programs are designed to
+          meet your specific needs and goals.
+        </p>
+        <p>
+          We believe that every dog deserves to have a happy and fulfilling
+          life, and our personalized training programs are designed to make that
+          a reality for you and your furry companion. So, whether you're dealing
+          with basic obedience issues or more complex behavioral problems, we're
+          here to help you achieve your goals and create a better life for you
+          and your dog.
         </p>
       </div>
     </>

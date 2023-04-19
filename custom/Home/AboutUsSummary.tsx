@@ -1,32 +1,38 @@
+import LinkButton from '@/Components/Buttons/LinkButton';
 import TextImageContent from '@/Components/Layout/TextImageContent';
 
 const AboutUsSummary = () => {
   return (
     <TextImageContent
-      imgSrc="/images/about_us_summary.png"
+      imgSrc="/images/trainer_main.jpg"
       imgAlt="About Us"
       reverse={true}
     >
-      <div>
+      <div className="grid grid-flow-row">
         <h3 className="prose lg:prose-xl text-2xl lg:text-4xl font-extrabold uppercase mb-4">
-          A family owned moving company serving Florida
+          Transform Your Dog into the Perfect Companion
         </h3>
         <p className="mb-6">
-          At Top Choice Movers, we understand how important it is to find a
-          reliable and trustworthy moving company to handle your relocation
-          needs. As a family-owned business, we pride ourselves on our
-          commitment to providing exceptional customer service and ensuring your
-          move is as stress-free as possible.
+          At A Better Companion Dog Training, we believe that a well-trained dog
+          is a happy dog. Our customized training programs are designed to
+          transform your relationship with your furry companion by creating a
+          strong foundation of trust, respect, and clear communication.
         </p>
         <p>
-          We take great care in ensuring your belongings are safely transported
-          to your new home or office, and our team of experienced movers are
-          dedicated to handling your items with the utmost care and attention.
-          With Top Choice Movers, you can rest assured that your move is in good
-          hands, and we'll go above and beyond to ensure your complete
-          satisfaction. Choose us for your next move and experience what makes
-          us the Top Choice for moving services.
+          We work with you to understand your specific needs and goals, and then
+          tailor our approach to help you achieve them. Whether you're looking
+          to teach basic obedience commands, address problem behaviors, or
+          simply strengthen your bond with your dog, we're here to help you
+          every step of the way. With our proven methods and expert guidance,
+          you'll see a noticeable improvement in your dog's behavior and overall
+          happiness, making for a happier, healthier, and more fulfilling
+          relationship with your canine friend.
         </p>
+        <div className="my-8">
+          <LinkButton href="about" color="primary">
+            Learn More
+          </LinkButton>
+        </div>
       </div>
     </TextImageContent>
   );

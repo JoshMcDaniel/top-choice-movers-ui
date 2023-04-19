@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <DynamicHead org={org} description={`${org.name} home page.`} />
-      <HeroSection bgImageUrl="/images/truck_bg.jpg">
+      <HeroSection bgImageUrl="/images/home_hero.jpg">
         <div className="text-center px-6 md:px-12">
           <MottoShort />
           <LinkButton href="/contact" color="secondary">

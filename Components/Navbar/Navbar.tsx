@@ -13,22 +13,22 @@ type Props = {
 const Navbar = (props: Props) => {
   return (
     <nav
-      className="whitespace-nowrap relative grid grid-flow-col gap-2 w-full items-center justify-between bg-primary p-2 md:px-5 md:py-3 shadow-md shadow-black/5 text-base-100"
+      className={`whitespace-nowrap relative grid grid-flow-col gap-2 w-full bg-primary items-center justify-between p-2 md:px-5 md:py-3 shadow-md shadow-black/5 text-base-100 transition-all duration-300`}
       data-te-navbar-ref
     >
       <div className="grid grid-flow-col gap-2 items-center w-fit">
         <SquareAvatar
           src="/images/logo.png"
           alt={props.org.name + ' logo'}
-          width={120}
-          height={120}
+          width={50}
+          height={50}
           className="mr-4"
         />
         <CallNowButton phoneNumber={props.org.contact.phoneNumber.primary} />
       </div>
 
       <div
-        className="hidden lg:block grid grid-flow-col gap-2 items-center items-center"
+        className="hidden lg:grid grid-flow-col gap-2 items-center"
         id="navbarSupportedContent1"
         data-te-collapse-item
       >

@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 type Props = {
   imgSrc: string;
   imgAlt: string;
@@ -14,13 +16,24 @@ const TextImageContent = (props: Props) => {
   const shadow = `${props.disableShadow ? '' : 'shadow-lg'}`;
 
   const imgSection = (
-    <div className="grow-0 shrink-0 basis-auto w-full mb-6 lg:mb-0">
+    <div className="grow-0 basis-auto w-full h-full mb-6 lg:mb-0">
       <div
-        className={`relative overflow-hidden bg-no-repeat bg-cover ripple rounded-lg bg-center ${shadow}`}
+        className={`relative h-full overflow-hidden bg-no-repeat bg-cover ripple rounded-lg bg-center ${shadow}`}
         data-mdb-ripple="true"
         data-mdb-ripple-color="light"
       >
-        <img src={props.imgSrc} className="w-full" alt={props.imgAlt} />
+        <figure className="relative w-full h-full overflow-hidden aspect-square">
+          <Image
+            src={props.imgSrc}
+            alt={props.imgAlt}
+            priority={true}
+            fill
+            sizes="(max-width: 768px) 100%,
+                    (max-width: 1200px) 100%,
+                    100%"
+            style={{ objectFit: 'cover' }}
+          />
+        </figure>
       </div>
     </div>
   );
@@ -31,7 +44,7 @@ const TextImageContent = (props: Props) => {
 
   return (
     <div
-      className={`grid grid-cols-1 lg:grid-row-1 lg:grid-cols-2 gap-4 lg:gap-8 px-4 py-12 lg:px-12 w-full ${bgColor} ${textColor}`}
+      className={`grid grid-cols-1 grid-rows-[1fr_1fr] lg:grid-cols-[1fr_1fr] lg:grid-rows-1 gap-4 lg:gap-8 px-4 py-12 lg:px-12 w-full ${bgColor} ${textColor}`}
     >
       {props.reverse ? (
         <>

@@ -26,8 +26,8 @@ module.exports = {
       colors: {
         transparent: 'transparent',
         current: 'currentColor',
-        primary: '#27445C',
-        secondary: '#E2B74D',
+        primary: '#305465',
+        secondary: '#f3e29a',
         accent: '#E2B74D',
         'base-100': '#F6F6F6',
         silver: '#C0C0C0',

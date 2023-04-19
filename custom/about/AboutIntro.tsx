@@ -6,40 +6,54 @@ import AlwaysAvailableBanner from '../general/AlwaysAvailableBanner';
 const AboutIntro = () => {
   const isMdView = useMediaQuery('lg');
   return (
-    <>
-      <HeroSection bgImageUrl="/images/about_us_summary.png">
+    <main className="prone lg:prose-lg">
+      {/* <HeroSection bgImageUrl="/images/about_us_main.jpg">
         <div className="text-center px-6 md:px-12">
           <h2 className="text-3xl lg:text-5xl font-extrabold text-base-100">
-            Why we are the
+            A Better
             <br />
             <span className="text-4xl lg:text-6xl font-black underline underline-offset-4 decoration-secondary">
-              Top Choice
+              Companion
             </span>
           </h2>
         </div>
       </HeroSection>
-      <AlwaysAvailableBanner />
+      <AlwaysAvailableBanner /> */}
+
+      <div className="grid content-center justify-center pt-12 px-4 bg-base-100">
+        <h1 className="prose lg:prose-lg !m-0 text-2xl lg:text-4xl font-extrabold uppercase mb-4">
+          Who We Are
+        </h1>
+      </div>
       <TextImageContent
-        imgSrc="/images/about_family.jpg"
+        imgSrc="/images/about_us_main.jpg"
         imgAlt="Family Owned"
         bgColor="base-100"
-        reverse={true}
+        // reverse={true}
       >
         <div>
-          <h1 className="text-2xl lg:text-4xl font-extrabold uppercase mb-4">
-            Family-Owned Moving Company
-          </h1>
           <p className="mb-6">
-            Welcome to Top Choice Movers, your trusted and reliable moving
-            company in Florida. Our family-owned business was founded in 2016
-            with the goal of providing exceptional moving services to families
-            and businesses in the Sunshine State. With years of experience in
-            the industry, we take pride in our ability to deliver stress-free
-            and efficient moving experiences to all our clients.
+            At our dog training center, we are passionate about helping dogs and
+            their owners build strong, loving relationships. Our team consists
+            of experienced and certified trainers who are committed to providing
+            personalized training programs that meet the unique needs of each
+            dog and owner. We believe that every dog is capable of learning and
+            that positive reinforcement is the most effective training method
+            for creating lasting behavior changes.
+          </p>
+          <p>
+            Our approach to training is centered around building trust and
+            mutual respect between dogs and their owners. We understand that
+            every dog is unique and that each one requires a customized approach
+            to training. That's why we take the time to get to know each dog and
+            owner, assessing their individual strengths and weaknesses, to
+            create a training plan that is tailored to their specific needs. Our
+            goal is to help dogs and their owners develop the skills and
+            behaviors needed to create a happy and harmonious home environment.
           </p>
         </div>
       </TextImageContent>
-      <TextImageContent
+      {/* <TextImageContent
         imgSrc="/images/moving_action_2.jpg"
         imgAlt="Personalized Moving Services"
         bgColor="primary"
@@ -85,8 +99,8 @@ const AboutIntro = () => {
             moving needs.
           </p>
         </div>
-      </TextImageContent>
-    </>
+      </TextImageContent> */}
+    </main>
   );
 };
 

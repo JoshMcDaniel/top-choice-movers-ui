@@ -6,9 +6,9 @@ type Props = {
 
 const HeroSection = (props: Props) => {
   return (
-    <section className="overflow-hidden shadow-xl">
+    <section className="overflow-hidden w-full h-[300px] lg:h-[calc(100vh-80.25px)] shadow-xl">
       <div
-        className="relative overflow-hidden bg-no-repeat bg-cover bg-center h-[300px] md:h-[500px]"
+        className="relative overflow-hidden bg-no-repeat bg-cover bg-center h-full"
         style={{ backgroundImage: `url(${props.bgImageUrl})` }}
       >
         <div className="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed bg-black/[55%]">

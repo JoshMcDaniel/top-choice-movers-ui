@@ -22,14 +22,18 @@ const SelectedServicePage = (props: { service: Service }) => {
         </div>
       </HeroSection>
       <FreeQuoteBanner>
-        <span>Interested in {service?.name}?</span>
+        <span>Interested in the {service?.name} program?</span>
       </FreeQuoteBanner>
-      <div className="grid grid-flow-row gap-4 lg:gap-8 px-4 py-12 lg:px-12 max-w-5xl m-0 lg:m-auto">
+      <div className="prose grid grid-flow-row px-4 py-12 lg:px-12 max-w-5xl m-0 lg:m-auto">
         <h3 className="text-2xl lg:text-4xl font-extrabold uppercase mb-4">
           {service?.name}
         </h3>
-        <p>{service?.summary}</p>
-        <p className="mb-6">{service?.description}</p>
+        <p
+          className="mb-6"
+          dangerouslySetInnerHTML={{
+            __html: service?.description.replace(/\\n/g, '<br>'),
+          }}
+        />
       </div>
     </>
   );

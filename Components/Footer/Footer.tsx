@@ -1,12 +1,10 @@
 import { Organization } from '../Dashboard/Dashboard';
 import BlurryHorizontalDivider from '../Dividers/BlurryHorizontalDivider';
-import Address from '../Labels/Address';
 import Email from '../Labels/Email';
 import PhoneNumber from '../Labels/phoneNumber';
-import { MdLocationOn } from 'react-icons/md';
 import { HiOutlineMail } from 'react-icons/hi';
 import { IoMdCall } from 'react-icons/io';
-import { ImFacebook } from 'react-icons/im';
+import { ImFacebook, ImInstagram, ImYoutube } from 'react-icons/im';
 import { baseRoutes } from '@/constants/baseRoutes';
 
 type Props = {
@@ -29,6 +27,22 @@ const Footer = (props: Props) => {
             className="mr-6 text-base-100"
           >
             <ImFacebook />
+          </a>
+          <a
+            href={org.social.links.instagram}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mr-6 text-base-100"
+          >
+            <ImInstagram />
+          </a>
+          <a
+            href={org.social.links.youtube}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mr-6 text-base-100"
+          >
+            <ImYoutube />
           </a>
         </div>
       </div>
@@ -65,10 +79,6 @@ const Footer = (props: Props) => {
             <h6 className="mb-4 flex justify-center font-semibold uppercase md:justify-start">
               Contact
             </h6>
-            <p className="mb-4 flex items-center justify-center gap-2 md:justify-start">
-              <MdLocationOn className="text-2xl" />
-              <Address address={org.contact.address} />
-            </p>
             <p className="mb-4 flex items-center justify-center gap-2 md:justify-start">
               <HiOutlineMail className="text-2xl" />
               <Email email={org.contact.email.primary} />

@@ -1,84 +1,56 @@
 {
-  "name": "Top Choice Movers",
-  "motto": "Reliable, hassle-free delivery services, handled with care and delivered on time",
-  "mottoShort": "Moving your life, one box at a time",
+  "name": "A Better Companion Dog Training",
+  "motto": "Any Age | Any Breed",
+  "mottoShort": "Any Age | Any Breed",
   "operatingSchedule": {
-    "daysOfWeek": "Monday - Saturday",
-    "hours": "7am - 9pm"
+    "daysOfWeek": "Monday - Friday",
+    "hours": "9am - 5pm"
   },
   "contact": {
     "phoneNumber": {
-      "primary": 3212729533
+      "primary": 4075794795
     },
     "email": {
-      "primary": "topchoicemoversinc@gmail.com"
+      "primary": "abcdogtraining@outlook.com"
     },
     "address": {
-      "fullAddress": "6180 Babcock St SE, Palm Bay, FL, 32909",
-      "street": "6180 Babcock St SE",
-      "city": "Palm Bay",
+      "fullAddress": "1612 Pine Ave, Mount Dora, FL, 32909",
+      "street": "1612 Pine Ave",
+      "city": "Mount Dora",
       "state": "FL",
-      "zipCode": 32909,
-      "googleMapsLink": "https://goo.gl/maps/PXfJbeyJ9PFFr4Ty8"
+      "zipCode": 32757
     }
   },
   "social": {
     "links": {
-      "facebook": "https://www.facebook.com/TopChoiceMoversInc/"
+      "facebook": "https://www.facebook.com/profile.php?id=100050508015867",
+      "instagram": "https://www.instagram.com/abcdogtraining7/?hl=en",
+      "youtube": "https://www.youtube.com/channel/UC1qygyq2bXmmJg_iUZG36KQ"
     }
   },
   "services": [
     {
-      "name": "Residential Moving",
-      "summary": "At Top Choice Movers, we understand that moving can be overwhelming, which is why we offer our expertise to make your residential move as smooth as possible. Our team of professionals handles everything from packing and loading to transportation and unloading, leaving you with a stress-free experience. Trust us to make your move a success.",
-      "description": "Moving can be a stressful and overwhelming experience. At Top Choice Movers, we're here to make your residential move as smooth and easy as possible. We provide professional moving services for local and long-distance moves, ensuring your belongings are carefully packed, transported, and unloaded with care.\nOur team is experienced in handling all types of household items, from furniture and appliances to delicate items and artwork.We also offer packing and unpacking services, so you can focus on settling into your new home.\nTo get started, simply give us a call or request a free quote, and we'll schedule a complimentary in-home estimate. Once you accept our proposal, we'll take care of the rest, making sure your move is stress-free and enjoyable. Trust us to get you to your new home with ease.",
-      "route": "/residential-moving",
+      "name": "Basic Obedience",
+      "summaryShort": "Private lessons where dogs are trained to behave appropriately in public spaces and at home.",
+      "summary": "Your dog will receive 6 private lessons, each lasting about an hour. You will learn how to teach your dog to walk calmly on a loose leash, sit and stay, and come when called. Additionally, the Place command will be taught, which is where your dog goes to a designated spot and stays there until released. The program also includes working on any unwanted behaviors such as barking, chewing, and jumping up.",
+      "description": "My Basic Obedience program includes 6 private lessons. Each lesson is roughly 1 hour long.\\n\\nIn this program, I will teach your dog how to walk calmly beside you on a loose leash (“Heel”). Regardless of where you are or what is going on, your dog is expected to walk beside you without pulling, lagging behind, or wandering from your left to right side.\\n\\nI will also teach your dog how to Sit and Stay. This command is used anytime you stop. As soon as you come to a stop when heeling your dog, he will be put into the Sit position where he/she must Stay until released or given another command. Because we are going to do this every time we stop, it will eventually become an automatic command. That is, your dog will Sit without being told when you stop walking.\\n\\nIf your dog is sitting, he cannot jump up on someone in front of you or run across the street. We will also teach your dog to Sit and Stay before going in or out of the house. By doing this, your dog will learn not to crash the door and jump on your guests or run away. The Sit/Stay command is used for when you only need a short period of control over your dog (i.e. greeting guests, feeding time, entering/exiting the home, Etc.). It is uncomfortable for the dog so when we need him to Stay longer we will put him in the Down command.\\Laying Down is much more comfortable for your dog so we will work that up to about 20-30 minutes. This command is useful for when you are at the Vet’s office, the groomer, or talking to a neighbor. Your dog will also learn to Come when called. This is by far the most important command to teach your dog. The other commands are useful, but teaching your dog to Come when he is called, can save his life.\\n\\nYour dog will be taught that when you call him, he should Come to you and then Sit and Stay until you either release him or give him another command. While the Come command is the most important, the Place command is the most practical. This is the one I use the most with my own dog and the one my clients love the most.\\n\\nThe Place command is where your dog is taught to go to a designated place (usually a dog bed) on command and stay there until released. This command is used whenever you are having dinner, changing the baby, you have guests over, you’re watching a movie, Etc. Because your dog has the freedom to chew on a toy and move around in his Place, we can expect him to stay there for much longer than when he is in the Down command. Most of my clients work this up to 2 hours or more.\\n\\nAnother good thing about the Place command is that it is portable. You just simply move the bed into another room, out by the pool, or wherever you need it. You can even use it in the car or take it with you on vacation.\\n\\nAs part of the program, we will usually conduct one of the lessons at a pet store or a park so you can learn how to handle your dog away from home. Also as part of the program, we will modify any unwanted behaviors. I will help you with Housebreaking, Chewing, Barking, Jumping Up, Digging, Stealing, Etc. We will work on whatever issues you are having so that you will have a well-adjusted companion that is a joy to live with.",
+      "route": "/basic-obedience-program",
       "image": {
-        "imgSrc": "/images/moving_action.png",
-        "imgAlt": "Moving action"
+        "imgSrc": "/images/leash_training.jpg",
+        "imgAlt": "Basic Obedience Program"
       }
     },
     {
-      "name": "Commercial Moving",
-      "summary": "Top Choice Movers' Commercial Moving service takes the stress out of moving your business. Our team of professionals handles everything from packing and organizing to transportation and reassembly, ensuring a seamless transition. With our commitment to customer satisfaction, you can trust us to minimize downtime and provide you with a hassle-free experience.",
-      "description": "At Top Choice Movers, we know how demanding it can be to run a business. That's why we're dedicated to making your commercial move as seamless and stress-free as possible. We provide efficient and professional office moving and commercial moving services, whether you're moving locally or between offices.\nFrom packing and organizing to loading, transporting, and unloading your office furniture and equipment, we take care of it all. Simply give us a call or request a free quote, and we'll arrange for a complimentary in-office estimate.\nOnce you accept our proposal, we'll handle the heavy lifting so you can focus on managing your business. Let us take the hassle out of your next move and get you to your new location with ease.",
-      "route": "/commercial-moving",
+      "name": "Advanced Off-Leash Training",
+      "summaryShort": "Designed for those who have completed Basic Obedience and want to advance further.",
+      "summary": "This program is designed for those who have completed the Basic Obedience program and want to advance their dog's skills. It focuses on off-leash training, with an emphasis on walking beside you and coming when called. In addition to the Come command, the \"Here\" command is taught, which allows the dog to stay close to you without having to come directly to you, making it ideal for off-leash environments.",
+      "description": "This program is for someone who has been through the Basic Obedience program and would like to take it to the next level.\\n\\nWe would work off leash on some of the commands taught in the Basic Obedience program, with an emphasis on staying with you while you are walking and on coming to you.\\n\\nAlong with the Come command, I also teach your dog the \"Here\" command which requires the dog to get closer to you without having to Come directly to you. This is for when you are at a park, the beach, or anyplace that allows your dog off leash to have a little more freedom without them wandering too far away from you.\\n\\nIt lets your dog know that they are getting too far away and that you would like them to walk closer to you or that you are changing direction and that they need to follow you.\\n\\nThe goal of this program is for you have a dog that you can take off leash where they are allowed to be and still have verbal control over them.",
+      "route": "/advanced-off-leash-training-program",
       "image": {
-        "imgSrc": "/images/moving_action.png",
-        "imgAlt": "Moving action"
-      }
-    },
-    {
-      "name": "Long Distance Moving",
-      "summary": "If you're planning a long distance move within Florida, look no further than Top Choice Movers. Our team of experienced movers will ensure a smooth and efficient move, taking care of all the details from start to finish. With our commitment to customer satisfaction, you can trust us to make your long distance move stress-free and hassle-free.",
-      "description": "Top Choice Movers' Long Distance moving service is perfect for anyone looking to relocate within the state of Florida. We understand that moving can be a stressful and overwhelming experience, especially when it involves long distances. That's why we're dedicated to providing a smooth and efficient moving experience that meets all your needs.\nOur Long Distance service within Florida includes packing, loading, transporting, unloading, and unpacking of your belongings, ensuring that your items are safely and securely transported to your new location. We also provide insurance options to give you peace of mind during the move. Our team of expert movers will work closely with you to create a customized moving plan that fits your unique needs and budget.\nAt Top Choice Movers, we prioritize your satisfaction and strive to exceed your expectations. If you're moving within Florida, our Long Distance service will ensure that your move is stress-free and seamless. Contact us today to schedule a consultation and receive a free quote.",
-      "route": "/long-distance-moving",
-      "image": {
-        "imgSrc": "/images/moving_action.png",
-        "imgAlt": "Moving action"
-      }
-    },
-    {
-      "name": "Haul Aways",
-      "summary": "Top Choice Movers' Haul Away service is the perfect solution for those looking to declutter their space. Our team of experts will handle the pickup and disposal of various items in an environmentally friendly manner, leaving you with a clutter-free space. With our stress-free and hassle-free service, you can sit back and relax while we take care of everything.",
-      "description": "Top Choice Movers' Haul Away service is designed to help you get rid of unwanted items quickly and easily. Whether you're cleaning out your garage, remodeling your home, or just decluttering, our team of expert movers can help haul away all your unwanted items.\nOur Haul Away service includes the removal of various items such as furniture, appliances, electronics, and more. We ensure that all items are disposed of properly and in an environmentally friendly manner.\nAt Top Choice Movers, we are committed to providing you with a stress-free and hassle-free experience. Our team of professionals will work with you to schedule a convenient pickup time that fits your schedule. We'll also provide you with a clear and upfront pricing structure, so you know exactly what to expect.\nWhen you choose Top Choice Movers' Haul Away service, you can rest assured that you're choosing a reliable and trustworthy company that will get the job done right. Contact us today to schedule a pickup and say goodbye to all your unwanted items.",
-      "route": "/haul-away-moving",
-      "image": {
-        "imgSrc": "/images/moving_action.png",
-        "imgAlt": "Moving action"
+        "imgSrc": "/images/off_leash.jpeg",
+        "imgAlt": "Advanced Off-Leash Training Program"
       }
     }
   ],
-  "serving": [
-    "Viera, FL",
-    "Suntree, FL",
-    "Satellite Beach, FL",
-    "Cocoa, FL",
-    "Titusville, FL",
-    "Rockledge, FL",
-    "Melbourne, FL",
-    "West Melbourne, FL",
-    "Palm Bay, FL",
-    "Indialantic, FL"
-  ]
+  "serving": ["Mount Dora, FL", "Eustis, FL"]
 }
